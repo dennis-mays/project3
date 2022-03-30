@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/video_helpers.js" defer></script>
+        <script type="module" src="js/main.js"></script>
+        <title>Project 3 - Dynamic Media Player</title>
+    </head>
+    <body>
+        <header>
+            <h1>Project 3 - Dynamic Media Player</h1>
+        </header>
+        <main id="container">
+            <section class="col1">
+                <video id="vid" width="352" controls>
+                    <source
+                        src="http://www.dennismays.com/artdm174/media/29days.mp4"
+                        type="video/mp4"
+                    />
+                    <!-- <source src="" type="video/webm" /> -->
+                    <!-- <source src="" type="video/ogg" /> -->
+                    <track
+                        kind="captions"
+                        label="On"
+                        srclang="en"
+                        src="./captions/29days_captions.vtt"
+                        default
+                    />
+
+                    <!-- final fallback to text -->
+                    <h2></h2>
+                    <p></p>
+                </video>
+
+                <div id="controls">
+                    <form id="video_form">
+                        <fieldset>
+                            <input
+                                type="button"
+                                id="play_button"
+                                onclick="playVideo(vid)"
+                            />
+                            <input
+                                type="button"
+                                id="pause_button"
+                                onclick="pauseVideo(vid)"
+                            />
+                            <input
+                                type="button"
+                                id="stop_button"
+                                onclick="stopVideo(vid)"
+                            />
+                            <input
+                                type="button"
+                                id="rewind"
+                                onclick="seekVideo(vid, 0)"
+                            />
+                            <input
+                                type="button"
+                                id="end"
+                                onclick="endVideo(vid, vid.duration)"
+                            />
+                            <input
+                                type="button"
+                                id="mute"
+                                onclick="muteVideo(vid)"
+                            />
+                            <input
+                                type="button"
+                                id="unmute"
+                                onclick="unmuteVideo(vid)"
+                            />
+                        </fieldset>
+                        <fieldset>
+                            <select id="video_select">
+                                <option>Select a video to play...</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <input
+                                type="button"
+                                id="ff"
+                                onclick="playRate(vid, 2)"
+                            />
+                            <input
+                                type="button"
+                                id="slo"
+                                onclick="playRate(vid, .5)"
+                            />
+                            <input
+                                type="button"
+                                id="normal"
+                                onclick="playRate(vid, 1)"
+                            />
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="transcript">
+                    <h2>Transcript</h2>
+                </div>
+
+                <div class="pop hide">
+                    <p>Test This!</p>
+                </div>
+            </section>
+
+            <section class="col2">
+                <iframe id="web" src="./blank.html"></iframe>
+                <iframe id="pics" src="./blank.html"></iframe>
+            </section>
+        </main>
+    </body>
+</html>

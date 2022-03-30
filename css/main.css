@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #fbf4e1;
+}
+
+header {
+    text-align: center;
+    background: #2b140e;
+    color: #fbf4e1;
+    padding: 0.7rem;
+}
+
+#container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 1rem;
+}
+
+#vid {
+    width: 500px;
+    /* height: 350px; */
+}
+
+input[type="button"] {
+    width: 55px;
+    height: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+#play_button {
+    background-image: url(/icons/play40.png);
+}
+
+#pause_button {
+    background-image: url(/icons/pause40.png);
+}
+
+#stop_button {
+    background-image: url(/icons/stop40.png);
+}
+
+#rewind {
+    background-image: url(/icons/start40.png);
+}
+
+#end {
+    background-image: url(/icons/end40.png);
+}
+
+#mute {
+    background-image: url(/icons/mute40.png);
+}
+
+#unmute {
+    background-image: url(/icons/unmute40.png);
+}
+
+#ff {
+    background-image: url(/icons/fastforward40.png);
+}
+
+#slo {
+    background-image: url(/icons/slow40.png);
+}
+
+#normal {
+    background-image: url(/icons/play40.png);
+}
+
+.col1 {
+    border: 1px solid black;
+    height: fit-content;
+}
+
+.col2 {
+    height: 100vh;
+}
+
+iframe {
+    width: 100%;
+    height: 40vh;
+}
+
+#caption {
+    position: absolute;
+    width: 355px;
+    left: 0;
+    margin-top: -3.5em;
+    min-height: 3em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 1px 1px 3px;
+    padding-bottom: 0.5em;
+    background-color: hsla(250, 10%, 50%, 0.8);
+}
+
+#transcript span {
+    display: table-row;
+}
+
+/* show the timings in square brackets before each "subtitle" in the transcript. */
+#transcript [data-begin]:before {
+    content: " [" attr(data-begin) "s-" attr(data-end) "s]   ";
+    font-size: 80%;
+    display: table-cell;
+    padding-right: 1em;
+}
+
+.pop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(99, 77, 55, 0.5);
+    color: #fff;
+    border: 3px solid red;
+    padding: 15px;
+    font-weight: bold;
+    z-index: 3;
+    opacity: 1;
+    transition: all 0.1s;
+}
+
+.hide {
+    opacity: 0;
+    transition: all 3s;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    .col2 {
+        grid-row: 2;
+    }
+}
+
