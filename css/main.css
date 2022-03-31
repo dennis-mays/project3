@@ -107,19 +107,31 @@ iframe {
     background-color: hsla(250, 10%, 50%, 0.8);
 }
 
-#transcript span {
-    display: table-row;
+.transcript h2 {
+    text-align: center;
 }
 
+.transcript p {
+    padding: 0 1rem;
+}
+
+.citation {
+    font-size: .7rem;
+}
+
+/* #transcript span {
+    display: table-row;
+} */
+
 /* show the timings in square brackets before each "subtitle" in the transcript. */
-#transcript [data-begin]:before {
+/* #transcript [data-begin]:before {
     content: " [" attr(data-begin) "s-" attr(data-end) "s]   ";
     font-size: 80%;
     display: table-cell;
     padding-right: 1em;
-}
+} */
 
-.pop {
+/* .pop {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,12 +143,12 @@ iframe {
     z-index: 3;
     opacity: 1;
     transition: all 0.1s;
-}
+} */
 
-.hide {
+/* .hide {
     opacity: 0;
     transition: all 3s;
-}
+} */
 
 @media screen and (max-width: 600px) {
     #container {
