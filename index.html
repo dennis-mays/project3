@@ -20,8 +20,14 @@
                         src="http://www.dennismays.com/artdm174/media/29days.mp4"
                         type="video/mp4"
                     />
-                    <!-- <source src="" type="video/webm" /> -->
-                    <!-- <source src="" type="video/ogg" /> -->
+                    <source
+                        src="http://www.dennismays.com/artdm174/media/29days.webm"
+                        type="video/webm"
+                    />
+                    <source
+                        src="http://www.dennismays.com/artdm174/media/29days.ogv"
+                        type="video/ogg"
+                    />
                     <track
                         kind="captions"
                         label="On"
@@ -276,8 +282,9 @@
             </section>
 
             <section class="col2">
-                <iframe id="web" src="./blank.html"></iframe>
-                <iframe id="pics" src="./blank.html"></iframe>
+                <iframe id="topFrame" src="./blank.html"></iframe>
+                <iframe id="botFrame" src="./blank.html"></iframe>
+                <!-- <div id="botFrame"></div> -->
             </section>
         </main>
     </body>

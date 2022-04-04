@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -11,7 +12,7 @@ header {
     text-align: center;
     background: #2b140e;
     color: #fbf4e1;
-    padding: 0.7rem;
+    padding: 1rem;
 }
 
 #container {
@@ -89,7 +90,14 @@ input[type="button"] {
 
 iframe {
     width: 100%;
-    height: 40vh;
+    height: 44vh;
+    border: none;
+}
+
+div#botFrame {
+    margin: auto;
+    width: 666px;
+    height: 335px;
 }
 
 #caption {
@@ -109,14 +117,17 @@ iframe {
 
 .transcript h2 {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .transcript p {
     padding: 0 1rem;
+    margin: 1rem 0;
+    line-height: 1.2rem;
 }
 
 .citation {
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 
 /* #transcript span {
@@ -159,4 +170,3 @@ iframe {
         grid-row: 2;
     }
 }
-
