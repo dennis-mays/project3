@@ -28,14 +28,31 @@ document.addEventListener("DOMContentLoaded", (e) => {
         { seconds: 55, callback: func10 },
         { seconds: 67, callback: func11 },
         { seconds: 80, callback: clearAll },
-        { seconds: 82, callback: func12 },
-        { seconds: 85, callback: func13 },
-        { seconds: 90, callback: func14 },
         { seconds: 114, callback: func15 },
         { seconds: 100, callback: func16 },
         { seconds: 106, callback: func17 },
         { seconds: 120, callback: clearAll },
         { seconds: 178, callback: func18 },
+        { seconds: 125, callback: func19 },
+        { seconds: 263, callback: func20 },
+        { seconds: 273, callback: func27 },
+        { seconds: 277, callback: func24 },
+        { seconds: 297, callback: func12 },
+        { seconds: 306, callback: func31 },
+        { seconds: 320, callback: func22 },
+        { seconds: 290, callback: func21 },
+        { seconds: 296, callback: clearTopFrame },
+        { seconds: 84, callback: func23 },
+        { seconds: 335, callback: clearBotFrame },
+        { seconds: 345, callback: func26 },
+        { seconds: 380, callback: func29 },
+        { seconds: 390, callback: func25 },
+        { seconds: 400, callback: func28 },
+        { seconds: 410, callback: func32 },
+        { seconds: 365, callback: clearAll },
+        { seconds: 420, callback: clearAll },
+        { seconds: 430, callback: func30 },
+        { seconds: 460, callback: func33 },
     ];
 
     // This activates the cuepoints module.
@@ -69,13 +86,6 @@ function clearAll() {
     document.querySelector("#topFrame").src = "./blank.html";
     document.querySelector("#botFrame").src = "./blank.html";
 }
-
-// function func1() {
-//     document.querySelector("#topFrame").src = "images/image01.jpg";
-//     document.querySelector("#botFrame").style.background =
-//         "url(images/blueprints.jpg) no-repeat top center";
-//     document.querySelector("#botFrame").style.backgroundSize = "contain";
-// }
 
 function func1() {
     document.querySelector("#botFrame").src = "images/apollo.jpg";
@@ -150,4 +160,72 @@ function func17() {
 
 function func18() {
     document.querySelector("#botFrame").src = "https://www.stsci.edu/";
+}
+
+function func19() {
+    document.querySelector("#topFrame").src =
+        "http://www.dennismays.com/artdm174/media/jwst_deployment.mp4";
+    document.querySelector("#totFrame").type = "video/mp4";
+}
+
+function func20() {
+    document.querySelector("#botFrame").src = "images/orbit.png";
+}
+
+function func21() {
+    document.querySelector("#botFrame").src = "images/solarwind.png";
+}
+
+function func22() {
+    document.querySelector("#botFrame").src = "images/kapton.png";
+}
+
+function func23() {
+    document.querySelector("#topFrame").src = "images/image08.png";
+}
+
+function func24() {
+    document.querySelector("#topFrame").src = "media/orbit.mp4";
+    document.querySelector("#totFrame").type = "video/mp4";
+}
+
+function func25() {
+    document.querySelector("#topFrame").src = "images/jwst04.png";
+}
+
+function func26() {
+    document.querySelector("#botFrame").src =
+        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope_sunshield#Design_and_manufacture";
+}
+
+function func27() {
+    document.querySelector("#botFrame").src = "images/image07.png";
+}
+
+function func28() {
+    document.querySelector("#botFrame").src = "images/jwst03.jpg";
+}
+
+function func29() {
+    document.querySelector("#botFrame").src = "images/jwst01.png";
+}
+
+function func30() {
+    document.querySelector("#topFrame").src =
+        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope#Scientific_instruments";
+}
+
+function func31() {
+    document.querySelector("#topFrame").src =
+        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope_sunshield";
+}
+
+function func32() {
+    document.querySelector("#topFrame").src = "images/jwst05.png";
+}
+
+function func33() {
+    document.querySelector("#botFrame").src =
+    "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope";
+document.querySelector("#topFrame").src = "images/image01.jpg";
 }
