@@ -28,30 +28,30 @@ document.addEventListener("DOMContentLoaded", (e) => {
         { seconds: 55, callback: func10 },
         { seconds: 67, callback: func11 },
         { seconds: 80, callback: clearAll },
-        { seconds: 114, callback: func15 },
+        { seconds: 84, callback: func23 },
         { seconds: 100, callback: func16 },
         { seconds: 106, callback: func17 },
+        { seconds: 114, callback: func15 },
         { seconds: 120, callback: clearAll },
-        { seconds: 178, callback: func18 },
         { seconds: 125, callback: func19 },
+        { seconds: 178, callback: func18 },
         { seconds: 263, callback: func20 },
         { seconds: 273, callback: func27 },
         { seconds: 277, callback: func24 },
+        { seconds: 290, callback: func21 },
+        { seconds: 296, callback: clearTopFrame },
         { seconds: 297, callback: func12 },
         { seconds: 306, callback: func31 },
         { seconds: 320, callback: func22 },
-        { seconds: 290, callback: func21 },
-        { seconds: 296, callback: clearTopFrame },
-        { seconds: 84, callback: func23 },
-        { seconds: 335, callback: clearBotFrame },
-        { seconds: 345, callback: func26 },
-        { seconds: 380, callback: func29 },
+        { seconds: 330, callback: clearBotFrame },
+        { seconds: 331, callback: func26 },
+        { seconds: 365, callback: clearTopFrame },
+        // { seconds: 380, callback: func29 },
         { seconds: 390, callback: func25 },
         { seconds: 400, callback: func28 },
         { seconds: 410, callback: func32 },
-        { seconds: 365, callback: clearAll },
         { seconds: 420, callback: clearAll },
-        { seconds: 430, callback: func30 },
+        { seconds: 421, callback: func30 },
         { seconds: 460, callback: func33 },
     ];
 
@@ -165,7 +165,7 @@ function func18() {
 function func19() {
     document.querySelector("#topFrame").src =
         "http://www.dennismays.com/artdm174/media/jwst_deployment.mp4";
-    document.querySelector("#totFrame").type = "video/mp4";
+    document.querySelector("#topFrame").type = "video/mp4";
 }
 
 function func20() {
@@ -186,7 +186,7 @@ function func23() {
 
 function func24() {
     document.querySelector("#topFrame").src = "media/orbit.mp4";
-    document.querySelector("#totFrame").type = "video/mp4";
+    document.querySelector("#topFrame").type = "video/mp4";
 }
 
 function func25() {
@@ -195,7 +195,8 @@ function func25() {
 
 function func26() {
     document.querySelector("#botFrame").src =
-        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope_sunshield#Design_and_manufacture";
+        "http://www.dennismays.com/artdm174/media/jwst_sunshield720.mp4";
+    document.querySelector("#botFrame").type = "video/mp4";
 }
 
 function func27() {
@@ -212,12 +213,14 @@ function func29() {
 
 function func30() {
     document.querySelector("#topFrame").src =
-        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope#Scientific_instruments";
+        "https://www.stsci.edu/jwst/instrumentation";
+    document.querySelector("#botFrame").src =
+        "https://www.wevolver.com/article/james-webb-space-telescope-science-instruments-explained";
 }
 
 function func31() {
     document.querySelector("#topFrame").src =
-        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope_sunshield";
+        "https://www.esa.int/Newsroom/Webb_sunshield_fully_deployed";
 }
 
 function func32() {
@@ -226,6 +229,6 @@ function func32() {
 
 function func33() {
     document.querySelector("#botFrame").src =
-    "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope";
-document.querySelector("#topFrame").src = "images/image01.jpg";
+        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope";
+    document.querySelector("#topFrame").src = "images/webblogo.png";
 }
