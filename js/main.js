@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         { seconds: 330, callback: clearBotFrame },
         { seconds: 331, callback: func26 },
         { seconds: 365, callback: clearTopFrame },
-        // { seconds: 380, callback: func29 },
         { seconds: 390, callback: func25 },
         { seconds: 400, callback: func28 },
         { seconds: 410, callback: func32 },
@@ -164,7 +163,7 @@ function func18() {
 
 function func19() {
     document.querySelector("#topFrame").src =
-        "http://www.dennismays.com/artdm174/media/jwst_deployment.mp4";
+        "http://www.dennismays.com/artdm174/media/jwst_deployment.mp4?autoplay=1";
     document.querySelector("#topFrame").type = "video/mp4";
 }
 
@@ -185,7 +184,7 @@ function func23() {
 }
 
 function func24() {
-    document.querySelector("#topFrame").src = "media/orbit.mp4";
+    document.querySelector("#topFrame").src = "media/orbit.mp4?autoplay=1";
     document.querySelector("#topFrame").type = "video/mp4";
 }
 
@@ -195,7 +194,7 @@ function func25() {
 
 function func26() {
     document.querySelector("#botFrame").src =
-        "http://www.dennismays.com/artdm174/media/jwst_sunshield720.mp4";
+        "http://www.dennismays.com/artdm174/media/jwst_sunshield720.mp4?autoplay=1";
     document.querySelector("#botFrame").type = "video/mp4";
 }
 
