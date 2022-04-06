@@ -48,61 +48,72 @@
                                 type="button"
                                 id="play_button"
                                 onclick="playVideo(vid)"
+                                value="play"
                             />
                             <input
                                 type="button"
                                 id="pause_button"
                                 onclick="pauseVideo(vid)"
+                                value="pause"
                             />
                             <input
                                 type="button"
                                 id="stop_button"
                                 onclick="stopVideo(vid)"
+                                value="stop"
                             />
                             <input
                                 type="button"
                                 id="rewind"
                                 onclick="seekVideo(vid, 0)"
+                                value="rewind"
                             />
                             <input
                                 type="button"
                                 id="end"
                                 onclick="endVideo(vid, vid.duration)"
+                                value="end"
                             />
                             <input
                                 type="button"
                                 id="mute"
                                 onclick="muteVideo(vid)"
+                                value="mute"
                             />
                             <input
                                 type="button"
                                 id="unmute"
                                 onclick="unmuteVideo(vid)"
+                                value="unmute"
                             />
                         </fieldset>
-                        <fieldset>
+                        <!-- <fieldset>
                             <select id="video_select">
                                 <option>Select a video to play...</option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
                             </select>
-                        </fieldset>
+                        </fieldset> -->
+                        <hr>
                         <fieldset>
                             <input
                                 type="button"
                                 id="ff"
                                 onclick="playRate(vid, 2)"
+                                value="2x speed"
                             />
                             <input
                                 type="button"
                                 id="slo"
                                 onclick="playRate(vid, .5)"
+                                value="1/2 speed"
                             />
                             <input
                                 type="button"
                                 id="normal"
                                 onclick="playRate(vid, 1)"
+                                value="normal"
                             />
                         </fieldset>
                     </form>
@@ -282,8 +293,16 @@
             </section>
 
             <section class="col2">
-                <iframe id="topFrame" src="./blank.html"></iframe>
-                <iframe id="botFrame" src="./blank.html"></iframe>
+                <iframe
+                    id="topFrame"
+                    src="./blank.html"
+                    allow="autoplay"
+                ></iframe>
+                <iframe
+                    id="botFrame"
+                    src="./blank.html"
+                    allow="autoplay"
+                ></iframe>
                 <!-- <div id="botFrame"></div> -->
             </section>
         </main>

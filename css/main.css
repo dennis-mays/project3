@@ -23,6 +23,7 @@ header {
     margin: auto;
     max-width: 1200px;
     padding-top: 1rem;
+    border: none;
 }
 
 #vid {
@@ -37,8 +38,10 @@ input[type="button"] {
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+    color: transparent;
 }
 
+/* Control button images */
 #play_button {
     background-image: url(/icons/play40.png);
 }
@@ -80,8 +83,20 @@ input[type="button"] {
 }
 
 .col1 {
-    border: 1px solid black;
+    border: none;
     height: fit-content;
+}
+
+fieldset {
+    border: none;
+}
+
+#controls {
+    border: solid 2px black;
+}
+
+hr {
+    border: solid 1px black;
 }
 
 .col2 {
@@ -94,11 +109,11 @@ iframe {
     border: none;
 }
 
-div#botFrame {
+/* div#botFrame {
     margin: auto;
     width: 666px;
     height: 335px;
-}
+} */
 
 #caption {
     position: absolute;
