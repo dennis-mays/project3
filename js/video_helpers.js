@@ -13,6 +13,7 @@ function selectVideo(e, clip) {
 
 function playVideo(clip) {
     clip.play();
+    clip.playbackRate = 1;
 }
 
 function seekVideo(clip, position) {

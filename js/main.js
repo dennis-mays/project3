@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         { seconds: 331, callback: func26 },
         { seconds: 365, callback: clearTopFrame },
         { seconds: 390, callback: func25 },
-        { seconds: 400, callback: func28 },
+        { seconds: 393, callback: func28 },
         { seconds: 410, callback: func32 },
         { seconds: 420, callback: clearAll },
         { seconds: 421, callback: func30 },
@@ -137,13 +137,13 @@ function func12() {
     document.querySelector("#botFrame").src = "images/ff03.png";
 }
 
-function func13() {
-    document.querySelector("#topFrame").src = "images/ff02.png";
-}
+// function func13() {
+//     document.querySelector("#topFrame").src = "images/ff02.png";
+// }
 
-function func14() {
-    document.querySelector("#botFrame").src = "images/ff01.png";
-}
+// function func14() {
+//     document.querySelector("#botFrame").src = "images/ff01.png";
+// }
 
 function func15() {
     document.querySelector("#topFrame").src = "images/image06.png";
@@ -206,9 +206,9 @@ function func28() {
     document.querySelector("#botFrame").src = "images/jwst03.jpg";
 }
 
-function func29() {
-    document.querySelector("#botFrame").src = "images/jwst01.png";
-}
+// function func29() {
+//     document.querySelector("#botFrame").src = "images/jwst01.png";
+// }
 
 function func30() {
     document.querySelector("#topFrame").src =
