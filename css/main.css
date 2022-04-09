@@ -43,43 +43,43 @@ input[type="button"] {
 
 /* Control button images */
 #play_button {
-    background-image: url(/icons/play40.png);
+    background-image: url(./icons/play40.png);
 }
 
 #pause_button {
-    background-image: url(/icons/pause40.png);
+    background-image: url(./icons/pause40.png);
 }
 
 #stop_button {
-    background-image: url(/icons/stop40.png);
+    background-image: url(./icons/stop40.png);
 }
 
 #rewind {
-    background-image: url(/icons/start40.png);
+    background-image: url(./icons/start40.png);
 }
 
 #end {
-    background-image: url(/icons/end40.png);
+    background-image: url(./icons/end40.png);
 }
 
 #mute {
-    background-image: url(/icons/mute40.png);
+    background-image: url(./icons/mute40.png);
 }
 
 #unmute {
-    background-image: url(/icons/unmute40.png);
+    background-image: url(./icons/unmute40.png);
 }
 
 #ff {
-    background-image: url(/icons/fastforward40.png);
+    background-image: url(./icons/fastforward40.png);
 }
 
 #slo {
-    background-image: url(/icons/slow40.png);
+    background-image: url(./icons/slow40.png);
 }
 
 #normal {
-    background-image: url(/icons/play40.png);
+    background-image: url(./icons/normal40.png);
 }
 
 .col1 {
