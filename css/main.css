@@ -22,6 +22,7 @@ header {
     position: relative;
     margin: auto;
     max-width: 1200px;
+    max-height: 700px;
     padding-top: 1rem;
     border: none;
 }
@@ -84,7 +85,8 @@ input[type="button"] {
 
 .col1 {
     border: none;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 650px;
 }
 
 fieldset {
@@ -100,7 +102,7 @@ hr {
 }
 
 .col2 {
-    height: 100vh;
+    height: 90vh;
 }
 
 iframe {
@@ -108,12 +110,6 @@ iframe {
     height: 44vh;
     border: none;
 }
-
-/* div#botFrame {
-    margin: auto;
-    width: 666px;
-    height: 335px;
-} */
 
 #caption {
     position: absolute;
@@ -128,6 +124,11 @@ iframe {
     text-shadow: black 1px 1px 3px;
     padding-bottom: 0.5em;
     background-color: hsla(250, 10%, 50%, 0.8);
+}
+
+div.transcript {
+    height: 250px;
+    overflow: scroll;
 }
 
 .transcript h2 {
@@ -155,25 +156,6 @@ iframe {
     font-size: 80%;
     display: table-cell;
     padding-right: 1em;
-} */
-
-/* .pop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(99, 77, 55, 0.5);
-    color: #fff;
-    border: 3px solid red;
-    padding: 15px;
-    font-weight: bold;
-    z-index: 3;
-    opacity: 1;
-    transition: all 0.1s;
-} */
-
-/* .hide {
-    opacity: 0;
-    transition: all 3s;
 } */
 
 @media screen and (max-width: 870px) {
