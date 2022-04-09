@@ -163,7 +163,7 @@ function func18() {
 
 function func19() {
     document.querySelector("#topFrame").src =
-        "http://www.dennismays.com/artdm174/media/jwst_deployment.mp4?autoplay=1";
+        "https://www.dennismays.com/artdm174/media/jwst_deployment.mp4?autoplay=1";
     document.querySelector("#topFrame").type = "video/mp4";
 }
 
@@ -194,7 +194,7 @@ function func25() {
 
 function func26() {
     document.querySelector("#botFrame").src =
-        "http://www.dennismays.com/artdm174/media/jwst_sunshield720.mp4?autoplay=1";
+        "https://www.dennismays.com/artdm174/media/jwst_sunshield720.mp4?autoplay=1";
     document.querySelector("#botFrame").type = "video/mp4";
 }
 
