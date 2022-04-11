@@ -213,11 +213,12 @@ function func24() {
 }
 
 function func25() {
-    setTwoFrame();
+    // setTwoFrame();
     document.querySelector("#topFrame").src = "images/jwst04.png";
 }
 
 function func26() {
+    setTwoFrame();
     document.querySelector("#topFrame").src =
         "https://www.dennismays.com/artdm174/media/jwst_sunshield720.mp4?autoplay=1";
     document.querySelector("#topFrame").type = "video/mp4";
