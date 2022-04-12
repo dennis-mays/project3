@@ -45,42 +45,49 @@
                                 id="play_button"
                                 onclick="playVideo(vid)"
                                 value="play"
+                                title="play"
                             />
                             <input
                                 type="button"
                                 id="pause_button"
                                 onclick="pauseVideo(vid)"
                                 value="pause"
+                                title="pause"
                             />
                             <input
                                 type="button"
                                 id="stop_button"
                                 onclick="stopVideo(vid)"
                                 value="stop"
+                                title="stop"
                             />
                             <input
                                 type="button"
                                 id="rewind"
                                 onclick="seekVideo(vid, 0)"
                                 value="rewind"
+                                title="beginning"
                             />
                             <input
                                 type="button"
                                 id="end"
                                 onclick="endVideo(vid, vid.duration)"
                                 value="end"
+                                title="end"
                             />
                             <input
                                 type="button"
                                 id="mute"
                                 onclick="muteVideo(vid)"
                                 value="mute"
+                                title="mute"
                             />
                             <input
                                 type="button"
                                 id="unmute"
                                 onclick="unmuteVideo(vid)"
                                 value="unmute"
+                                title="unmute"
                             />
                         </fieldset>
                         <hr />
@@ -90,18 +97,21 @@
                                 id="ff"
                                 onclick="playRate(vid, 2)"
                                 value="2x speed"
+                                title="2x speed"
                             />
                             <input
                                 type="button"
                                 id="slo"
                                 onclick="playRate(vid, .5)"
                                 value="1/2 speed"
+                                title="1/2 speed"
                             />
                             <input
                                 type="button"
                                 id="normal"
                                 onclick="playRate(vid, 1)"
                                 value="normal"
+                                title="normal"
                             />
                         </fieldset>
                     </form>
