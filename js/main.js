@@ -22,11 +22,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
         { seconds: 15, callback: func6 }, // Webb blueprints
         { seconds: 23, callback: clearAll },
         { seconds: 27, callback: func7 }, // Webb Wikipedia page
-        // { seconds: 37, callback: func8 },
         { seconds: 47, callback: clearTopFrame },
         { seconds: 51, callback: func9 }, // Telescope size comparision image
         { seconds: 65, callback: func10 }, // Big Bang article web page
-        // { seconds: 67, callback: func11 },
         { seconds: 80, callback: clearAll },
         { seconds: 84, callback: func23 }, // Mirror size comparison
         { seconds: 100, callback: func16 }, // Rocket on launch pad
@@ -42,10 +40,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         { seconds: 296, callback: clearTopFrame },
         { seconds: 297, callback: func12 }, // Webb fun fact primary mirror
         { seconds: 306, callback: func31 }, // ESA website on sunshield
-        // { seconds: 320, callback: func22 }, // Kapton definition
         { seconds: 330, callback: clearBotFrame },
         { seconds: 331, callback: func26 }, // Time lapse video
-        // { seconds: 365, callback: clearTopFrame },
         { seconds: 390, callback: func25 }, // Informational image
         { seconds: 400, callback: func28 }, // Informational image
         { seconds: 410, callback: func32 }, // Informational image
@@ -85,8 +81,6 @@ function setTwoFrame() {
     setOneFrame();
     document.querySelector(".col2").innerHTML +=
         '<iframe id="botFrame" src="./blank.html" allow="autoplay"></iframe>';
-    // document.querySelector(".col2").innerHTML =
-    //     '<iframe id="topFrame" src="./blank.html" allow="autoplay"></iframe><iframe id="botFrame" src="./blank.html" allow="autoplay"></iframe>';
     document.querySelector("#topFrame").style.height = "44vh";
     document.querySelector("#botFrame").style.height = "44vh";
 }
@@ -133,12 +127,7 @@ function func7() {
     setOneFrame();
     document.querySelector("#topFrame").src =
         "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope";
-    // document.querySelector("#topFrame").style.height = "88vh";
 }
-
-// function func8() {
-//     document.querySelector("#topFrame").src = "images/spof.png";
-// }
 
 function func9() {
     setOneFrame();
@@ -150,22 +139,10 @@ function func10() {
         "https://bigthink.com/starts-with-a-bang/big-bang-beginning-universe/";
 }
 
-// function func11() {
-//     document.querySelector("#topFrame").src = "images/jwst02.png";
-// }
-
 function func12() {
     setOneFrame();
     document.querySelector("#topFrame").src = "images/ff03.jpg";
 }
-
-// function func13() {
-//     document.querySelector("#topFrame").src = "images/ff02.png";
-// }
-
-// function func14() {
-//     document.querySelector("#botFrame").src = "images/ff01.png";
-// }
 
 function func15() {
     document.querySelector("#topFrame").src = "images/image06.png";
@@ -198,10 +175,6 @@ function func21() {
     document.querySelector("#botFrame").src = "images/solarwind.png";
 }
 
-// function func22() {
-//     document.querySelector("#botFrame").src = "images/kapton.png";
-// }
-
 function func23() {
     setOneFrame();
     document.querySelector("#topFrame").src = "images/size.jpg";
@@ -232,16 +205,10 @@ function func28() {
     document.querySelector("#botFrame").src = "images/jwst03.jpg";
 }
 
-// function func29() {
-//     document.querySelector("#botFrame").src = "images/jwst01.png";
-// }
-
 function func30() {
     document.querySelector("#topFrame").src =
         "https://www.stsci.edu/jwst/instrumentation";
     document.querySelector("#botFrame").src = "images/jwst.jpg";
-    // document.querySelector("#botFrame").src =
-    //     "https://www.wevolver.com/article/james-webb-space-telescope-science-instruments-explained";
 }
 
 function func31() {
@@ -255,7 +222,5 @@ function func32() {
 
 function func33() {
     setOneFrame();
-    // document.querySelector("#botFrame").src =
-    //     "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope";
     document.querySelector("#topFrame").src = "images/webblogo.png";
 }
